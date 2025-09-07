@@ -1,0 +1,179 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Utilisation de 100vh pour couvrir toute la hauteur */
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  align-self: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* HEADER */
+.header {
+  height: 15%;
+  width: 100%;
+  display: flex;
+  background-size: auto;
+  background-position: bottom;
+  background-image: url("../../public/images/bg.png");
+  background-position-y: 350px;
+  color: white;
+  position: relative;
+}
+.logo {
+  height: 100%; /* Taille adaptée */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+/* Animation au survol */
+.logo:hover {
+  animation: sail 3s infinite ease-in-out;
+}
+/* Définition de l'animation */
+@keyframes sail {
+  0% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-5px) translateX(10px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-5px) translateX(-10px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: #45a1df;
+  color: black;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: auto; /* IMPORTANT : pousse le footer vers le bas */
+}
+
+/* Conteneur principal */
+.container {
+  display: flex;
+  min-height: 100vh; /* Assure que l'ensemble de la page prend toute la hauteur de la fenêtre */
+  flex: 1;
+  flex-direction: column;
+}
+
+/* Titre */
+h2 {
+  color: #0f0f0f;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Boutons */
+
+.btn-primary {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Bouton retour */
+.btn-back {
+  margin-top: 2%;
+  margin-right: 1%;
+  right: 0;
+  position: absolute;
+  width: 40%;
+  height: 60px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-back:hover {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #0056b3;
+  transform: translateY(-10px);
+}
+
+/* Style du formulaire */
+.form-container {
+  background: white;
+  align-self: center;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Champs de saisie */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Messages d'erreur */
+.error {
+  align-items: center;
+  background-color: #ffdddd;
+  border-left: 5px solid #ff4d4d;
+  color: #d8000c;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.error-icon {
+  font-size: 18px;
+}
+
+.success {
+  background-color: #d4edda; /* Vert clair */
+  color: #155724; /* Vert foncé */
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #c3e6cb;
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0;
+  animation: fadeIn 0.5s ease-in-out;
+}

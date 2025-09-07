@@ -1,0 +1,96 @@
+CREATE DATABASE IF NOT EXISTS bd_projet_AIS;
+USE bd_projet_AIS;
+
+-- Table "Role"
+CREATE TABLE IF NOT EXISTS Role (
+    IDRole INT AUTO_INCREMENT PRIMARY KEY,
+    Role VARCHAR(255) NOT NULL
+);
+
+-- Table "Country"
+CREATE TABLE IF NOT EXISTS Country (
+    IDCountry INT AUTO_INCREMENT PRIMARY KEY,
+    NameCountry VARCHAR(255) NOT NULL
+);
+
+-- Table "Company"
+CREATE TABLE IF NOT EXISTS Company (
+    IDCompany INT AUTO_INCREMENT PRIMARY KEY,
+    NameCompany VARCHAR(255) NOT NULL,
+    IDCountry INT,
+    FOREIGN KEY (IDCountry) REFERENCES Country(IDCountry) ON DELETE CASCADE
+);
+
+-- Table "VesselType"
+CREATE TABLE IF NOT EXISTS VesselType (
+    IDVesselType INT AUTO_INCREMENT PRIMARY KEY,
+    Description VARCHAR(255) NOT NULL
+);
+
+-- Table "NavigationStatus"
+CREATE TABLE IF NOT EXISTS NavigationStatus (
+    Status INT AUTO_INCREMENT PRIMARY KEY,
+    Description VARCHAR(255) NOT NULL
+);
+
+-- Table "Vessel"
+CREATE TABLE IF NOT EXISTS Vessel (
+    MMSI VARCHAR(9) PRIMARY KEY,
+    IMO VARCHAR(20),
+    CallSign VARCHAR(50) NOT NULL,
+    IDVesselType INT,
+    VesselName VARCHAR(255) NOT NULL,
+    Length DECIMAL(10,5),
+    Width DECIMAL(10,5),
+    Draft DECIMAL(10,5),
+    Cargo VARCHAR(255),
+    IDCountry INT NOT NULL,
+    TransceiverClass VARCHAR(50) NOT NULL,
+    IDCompany INT,
+    FOREIGN KEY (IDCountry) REFERENCES Country(IDCountry) ON DELETE CASCADE,
+    FOREIGN KEY (IDCompany) REFERENCES Company(IDCompany) ON DELETE CASCADE,
+    FOREIGN KEY (IDVesselType) REFERENCES VesselType(IDVesselType) ON DELETE CASCADE
+);
+
+-- Table "Position"
+CREATE TABLE IF NOT EXISTS Position (
+    MMSI VARCHAR(9),
+    BaseDateTime DATETIME,
+    LAT DECIMAL(9,6),
+    LON DECIMAL(9,6),
+    SOG DECIMAL(5,2),
+    COG DECIMAL(5,2),
+    Heading DECIMAL(5,2),
+    Status INT,
+    Region VARCHAR(255),
+    PRIMARY KEY (MMSI, BaseDateTime),
+    FOREIGN KEY (MMSI) REFERENCES Vessel(MMSI) ON DELETE CASCADE,
+    FOREIGN KEY (Status) REFERENCES NavigationStatus(Status)
+);
+
+-- Table "User"
+CREATE TABLE IF NOT EXISTS User (
+    IDUser INT AUTO_INCREMENT PRIMARY KEY,
+    Password VARCHAR(255) NOT NULL,
+    Login VARCHAR(255) NOT NULL UNIQUE
+);
+
+-- Table "UserHasRole"
+CREATE TABLE IF NOT EXISTS UserHasRole (
+    IDUser INT,
+    IDRole INT,
+    PRIMARY KEY (IDUser, IDRole),
+    FOREIGN KEY (IDUser) REFERENCES User(IDUser) ON DELETE CASCADE,
+    FOREIGN KEY (IDRole) REFERENCES Role(IDRole) ON DELETE CASCADE
+);
+
+-- Table "UserHasVessel"
+CREATE TABLE IF NOT EXISTS UserHasVessel (
+    IDUser INT NOT NULL,
+    MMSI VARCHAR(9) NOT NULL,
+    IsCaptain TINYINT(1),
+    PRIMARY KEY (IDUser, MMSI),
+    FOREIGN KEY (IDUser) REFERENCES User(IDUser) ON DELETE CASCADE,
+    FOREIGN KEY (MMSI) REFERENCES Vessel(MMSI) ON DELETE CASCADE
+);
+

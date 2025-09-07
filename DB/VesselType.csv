@@ -1,0 +1,501 @@
+VesselType,Description
+0,Not available (default)
+1,Reserved for future use
+2,Reserved for future use
+3,Reserved for future use
+4,Reserved for future use
+5,Reserved for future use
+6,Reserved for future use
+7,Reserved for future use
+8,Reserved for future use
+9,Reserved for future use
+10,Reserved for future use
+11,Reserved for future use
+12,Reserved for future use
+13,Reserved for future use
+14,Reserved for future use
+15,Reserved for future use
+16,Reserved for future use
+17,Reserved for future use
+18,Reserved for future use
+19,Reserved for future use
+20,Wing in ground (WIG) all ships of this type
+21,Wing in ground (WIG) Hazardous category A
+22,Wing in ground (WIG) Hazardous category B
+23,Wing in ground (WIG) Hazardous category C
+24,Wing in ground (WIG) Hazardous category D
+25,Wing in ground (WIG) Reserved for future use
+26,Wing in ground (WIG) Reserved for future use
+27,Wing in ground (WIG) Reserved for future use
+28,Wing in ground (WIG) Reserved for future use
+29,Wing in ground (WIG) Reserved for future use
+30,Fishing
+31,Towing
+32,Towing length exceeds 200m or breadth exceeds 25m
+33,Dredging or underwater ops
+34,Diving ops
+35,Military ops
+36,Sailing
+37,Pleasure Craft
+38,Reserved
+39,Reserved
+40,High speed craft (HSC) all ships of this type
+41,High speed craft (HSC) Hazardous category A
+42,High speed craft (HSC) Hazardous category B
+43,High speed craft (HSC) Hazardous category C
+44,High speed craft (HSC) Hazardous category D
+45,High speed craft (HSC) Reserved for future use
+46,High speed craft (HSC) Reserved for future use
+47,High speed craft (HSC) Reserved for future use
+48,High speed craft (HSC) Reserved for future use
+49,High speed craft (HSC) No additional information
+50,Pilot Vessel
+51,Search and Rescue vessel
+52,Tug
+53,Port Tender
+54,Anti-pollution equipment
+55,Law Enforcement
+56,Spare - Local Vessel
+57,Spare - Local Vessel
+58,Medical Transport
+59,Noncombatant ship according to RR Resolution No. 18
+60,Passenger all ships of this type
+61,Passenger Hazardous category A
+62,Passenger Hazardous category B
+63,Passenger Hazardous category C
+64,Passenger Hazardous category D
+65,Passenger Reserved for future use
+66,Passenger Reserved for future use
+67,Passenger Reserved for future use
+68,Passenger Reserved for future use
+69,Passenger No additional information
+70,Cargo all ships of this type
+71,Cargo Hazardous category A
+72,Cargo Hazardous category B
+73,Cargo Hazardous category C
+74,Cargo Hazardous category D
+75,Cargo Reserved for future use
+76,Cargo Reserved for future use
+77,Cargo Reserved for future use
+78,Cargo Reserved for future use
+79,Cargo No additional information
+80,Tanker all ships of this type
+81,Tanker Hazardous category A
+82,Tanker Hazardous category B
+83,Tanker Hazardous category C
+84,Tanker Hazardous category D
+85,Tanker Reserved for future use
+86,Tanker Reserved for future use
+87,Tanker Reserved for future use
+88,Tanker Reserved for future use
+89,Tanker No additional information
+90,Other Type all ships of this type
+91,Other Type Hazardous category A
+92,Other Type Hazardous category B
+93,Other Type Hazardous category C
+94,Other Type Hazardous category D
+95,Other Type Reserved for future use
+96,Other Type Reserved for future use
+97,Other Type Reserved for future use
+98,Other Type Reserved for future use
+99,Other Type no additional information
+100,Not available (default)
+101,Not available (default)
+102,Not available (default)
+103,Not available (default)
+104,Not available (default)
+105,Not available (default)
+106,Not available (default)
+107,Not available (default)
+108,Not available (default)
+109,Not available (default)
+110,Not available (default)
+111,Not available (default)
+112,Not available (default)
+113,Not available (default)
+114,Not available (default)
+115,Not available (default)
+116,Not available (default)
+117,Not available (default)
+118,Not available (default)
+119,Not available (default)
+120,Not available (default)
+121,Not available (default)
+122,Not available (default)
+123,Not available (default)
+124,Not available (default)
+125,Not available (default)
+126,Not available (default)
+127,Not available (default)
+128,Not available (default)
+129,Not available (default)
+130,Not available (default)
+131,Not available (default)
+132,Not available (default)
+133,Not available (default)
+134,Not available (default)
+135,Not available (default)
+136,Not available (default)
+137,Not available (default)
+138,Not available (default)
+139,Not available (default)
+140,Not available (default)
+141,Not available (default)
+142,Not available (default)
+143,Not available (default)
+144,Not available (default)
+145,Not available (default)
+146,Not available (default)
+147,Not available (default)
+148,Not available (default)
+149,Not available (default)
+150,Not available (default)
+151,Not available (default)
+152,Not available (default)
+153,Not available (default)
+154,Not available (default)
+155,Not available (default)
+156,Not available (default)
+157,Not available (default)
+158,Not available (default)
+159,Not available (default)
+160,Not available (default)
+161,Not available (default)
+162,Not available (default)
+163,Not available (default)
+164,Not available (default)
+165,Not available (default)
+166,Not available (default)
+167,Not available (default)
+168,Not available (default)
+169,Not available (default)
+170,Not available (default)
+171,Not available (default)
+172,Not available (default)
+173,Not available (default)
+174,Not available (default)
+175,Not available (default)
+176,Not available (default)
+177,Not available (default)
+178,Not available (default)
+179,Not available (default)
+180,Not available (default)
+181,Not available (default)
+182,Not available (default)
+183,Not available (default)
+184,Not available (default)
+185,Not available (default)
+186,Not available (default)
+187,Not available (default)
+188,Not available (default)
+189,Not available (default)
+190,Not available (default)
+191,Not available (default)
+192,Not available (default)
+193,Not available (default)
+194,Not available (default)
+195,Not available (default)
+196,Not available (default)
+197,Not available (default)
+198,Not available (default)
+199,Not available (default)
+200,Not available (default)
+201,Not available (default)
+202,Not available (default)
+203,Not available (default)
+204,Not available (default)
+205,Not available (default)
+206,Not available (default)
+207,Not available (default)
+208,Not available (default)
+209,Not available (default)
+210,Not available (default)
+211,Not available (default)
+212,Not available (default)
+213,Not available (default)
+214,Not available (default)
+215,Not available (default)
+216,Not available (default)
+217,Not available (default)
+218,Not available (default)
+219,Not available (default)
+220,Not available (default)
+221,Not available (default)
+222,Not available (default)
+223,Not available (default)
+224,Not available (default)
+225,Not available (default)
+226,Not available (default)
+227,Not available (default)
+228,Not available (default)
+229,Not available (default)
+230,Not available (default)
+231,Not available (default)
+232,Not available (default)
+233,Not available (default)
+234,Not available (default)
+235,Not available (default)
+236,Not available (default)
+237,Not available (default)
+238,Not available (default)
+239,Not available (default)
+240,Not available (default)
+241,Not available (default)
+242,Not available (default)
+243,Not available (default)
+244,Not available (default)
+245,Not available (default)
+246,Not available (default)
+247,Not available (default)
+248,Not available (default)
+249,Not available (default)
+250,Not available (default)
+251,Not available (default)
+252,Not available (default)
+253,Not available (default)
+254,Not available (default)
+255,Not available (default)
+256,Not available (default)
+257,Not available (default)
+258,Not available (default)
+259,Not available (default)
+260,Not available (default)
+261,Not available (default)
+262,Not available (default)
+263,Not available (default)
+264,Not available (default)
+265,Not available (default)
+266,Not available (default)
+267,Not available (default)
+268,Not available (default)
+269,Not available (default)
+270,Not available (default)
+271,Not available (default)
+272,Not available (default)
+273,Not available (default)
+274,Not available (default)
+275,Not available (default)
+276,Not available (default)
+277,Not available (default)
+278,Not available (default)
+279,Not available (default)
+280,Not available (default)
+281,Not available (default)
+282,Not available (default)
+283,Not available (default)
+284,Not available (default)
+285,Not available (default)
+286,Not available (default)
+287,Not available (default)
+288,Not available (default)
+289,Not available (default)
+290,Not available (default)
+291,Not available (default)
+292,Not available (default)
+293,Not available (default)
+294,Not available (default)
+295,Not available (default)
+296,Not available (default)
+297,Not available (default)
+298,Not available (default)
+299,Not available (default)
+300,Not available (default)
+301,Not available (default)
+302,Not available (default)
+303,Not available (default)
+304,Not available (default)
+305,Not available (default)
+306,Not available (default)
+307,Not available (default)
+308,Not available (default)
+309,Not available (default)
+310,Not available (default)
+311,Not available (default)
+312,Not available (default)
+313,Not available (default)
+314,Not available (default)
+315,Not available (default)
+316,Not available (default)
+317,Not available (default)
+318,Not available (default)
+319,Not available (default)
+320,Not available (default)
+321,Not available (default)
+322,Not available (default)
+323,Not available (default)
+324,Not available (default)
+325,Not available (default)
+326,Not available (default)
+327,Not available (default)
+328,Not available (default)
+329,Not available (default)
+330,Not available (default)
+331,Not available (default)
+332,Not available (default)
+333,Not available (default)
+334,Not available (default)
+335,Not available (default)
+336,Not available (default)
+337,Not available (default)
+338,Not available (default)
+339,Not available (default)
+340,Not available (default)
+341,Not available (default)
+342,Not available (default)
+343,Not available (default)
+344,Not available (default)
+345,Not available (default)
+346,Not available (default)
+347,Not available (default)
+348,Not available (default)
+349,Not available (default)
+350,Not available (default)
+351,Not available (default)
+352,Not available (default)
+353,Not available (default)
+354,Not available (default)
+355,Not available (default)
+356,Not available (default)
+357,Not available (default)
+358,Not available (default)
+359,Not available (default)
+360,Not available (default)
+361,Not available (default)
+362,Not available (default)
+363,Not available (default)
+364,Not available (default)
+365,Not available (default)
+366,Not available (default)
+367,Not available (default)
+368,Not available (default)
+369,Not available (default)
+370,Not available (default)
+371,Not available (default)
+372,Not available (default)
+373,Not available (default)
+374,Not available (default)
+375,Not available (default)
+376,Not available (default)
+377,Not available (default)
+378,Not available (default)
+379,Not available (default)
+380,Not available (default)
+381,Not available (default)
+382,Not available (default)
+383,Not available (default)
+384,Not available (default)
+385,Not available (default)
+386,Not available (default)
+387,Not available (default)
+388,Not available (default)
+389,Not available (default)
+390,Not available (default)
+391,Not available (default)
+392,Not available (default)
+393,Not available (default)
+394,Not available (default)
+395,Not available (default)
+396,Not available (default)
+397,Not available (default)
+398,Not available (default)
+399,Not available (default)
+400,Not available (default)
+401,Not available (default)
+402,Not available (default)
+403,Not available (default)
+404,Not available (default)
+405,Not available (default)
+406,Not available (default)
+407,Not available (default)
+408,Not available (default)
+409,Not available (default)
+410,Not available (default)
+411,Not available (default)
+412,Not available (default)
+413,Not available (default)
+414,Not available (default)
+415,Not available (default)
+416,Not available (default)
+417,Not available (default)
+418,Not available (default)
+419,Not available (default)
+420,Not available (default)
+421,Not available (default)
+422,Not available (default)
+423,Not available (default)
+424,Not available (default)
+425,Not available (default)
+426,Not available (default)
+427,Not available (default)
+428,Not available (default)
+429,Not available (default)
+430,Not available (default)
+431,Not available (default)
+432,Not available (default)
+433,Not available (default)
+434,Not available (default)
+435,Not available (default)
+436,Not available (default)
+437,Not available (default)
+438,Not available (default)
+439,Not available (default)
+440,Not available (default)
+441,Not available (default)
+442,Not available (default)
+443,Not available (default)
+444,Not available (default)
+445,Not available (default)
+446,Not available (default)
+447,Not available (default)
+448,Not available (default)
+449,Not available (default)
+450,Not available (default)
+451,Not available (default)
+452,Not available (default)
+453,Not available (default)
+454,Not available (default)
+455,Not available (default)
+456,Not available (default)
+457,Not available (default)
+458,Not available (default)
+459,Not available (default)
+460,Not available (default)
+461,Not available (default)
+462,Not available (default)
+463,Not available (default)
+464,Not available (default)
+465,Not available (default)
+466,Not available (default)
+467,Not available (default)
+468,Not available (default)
+469,Not available (default)
+470,Not available (default)
+471,Not available (default)
+472,Not available (default)
+473,Not available (default)
+474,Not available (default)
+475,Not available (default)
+476,Not available (default)
+477,Not available (default)
+478,Not available (default)
+479,Not available (default)
+480,Not available (default)
+481,Not available (default)
+482,Not available (default)
+483,Not available (default)
+484,Not available (default)
+485,Not available (default)
+486,Not available (default)
+487,Not available (default)
+488,Not available (default)
+489,Not available (default)
+490,Not available (default)
+491,Not available (default)
+492,Not available (default)
+493,Not available (default)
+494,Not available (default)
+495,Not available (default)
+496,Not available (default)
+497,Not available (default)
+498,Not available (default)
+499,Not available (default)

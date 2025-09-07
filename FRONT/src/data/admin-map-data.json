@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nom": "Bateau Admin 1",
+    "latitude": 10,
+    "longitude": -10,
+    "status": "Active"
+  },
+  {
+    "id": 2,
+    "nom": "Bateau Admin 2",
+    "latitude": 15,
+    "longitude": -20,
+    "status": "Inactive"
+  }
+]

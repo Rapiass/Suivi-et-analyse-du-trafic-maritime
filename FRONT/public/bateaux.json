@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "nom": "Bateau A",
+    "longitude": "40",
+    "latitude": "80",
+    "status": "En eau"
+  },
+  {
+    "id": 2,
+    "nom": "Bateau B",
+    "longitude": "10",
+    "latitude": "-30",
+    "status": "Au port"
+  },
+  {
+    "id": 3,
+    "nom": "Bateau C",
+    "longitude": "-50",
+    "latitude": "-30",
+    "status": "Au port"
+  },
+  {
+    "id": 4,
+    "nom": "Bateau D",
+    "longitude": "-100",
+    "latitude": "80",
+    "status": "En eau"
+  },
+  {
+    "id": 5,
+    "nom": "Bateau E",
+    "longitude": "-150",
+    "latitude": "-20",
+    "status": "En eau"
+  },
+  {
+    "id": 6,
+    "nom": "Bateau F",
+    "longitude": "-20",
+    "latitude": "0",
+    "status": "En eau"
+  },
+  {
+    "id": 7,
+    "nom": "Bateau G",
+    "longitude": "150",
+    "latitude": "80",
+    "status": "En eau"
+  },
+  {
+    "id": 8,
+    "nom": "Bateau H",
+    "longitude": "-10",
+    "latitude": "40",
+    "status": "En eau"
+  },
+  {
+    "id": 9,
+    "nom": "Bateau I",
+    "longitude": "-90",
+    "latitude": "20",
+    "status": "En eau"
+  },
+  {
+    "id": 10,
+    "nom": "Weeb",
+    "longitude": "138",
+    "latitude": "38",
+    "status": "En eau"
+  },
+  {
+    "id": 11,
+    "nom": "Nemo",
+    "longitude": "-123",
+    "latitude": "-48",
+    "status": "En eau"
+  }
+]

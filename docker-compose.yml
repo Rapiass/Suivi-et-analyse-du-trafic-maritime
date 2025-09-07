@@ -1,0 +1,46 @@
+#version: '3.8'
+networks:
+  mynetwork:
+    name: mynetwork
+    driver: bridge
+    
+volumes:
+  db_data:
+    name: db_data
+
+services:
+  api:
+    build: ./BACK
+    container_name: api
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    networks:
+      - mynetwork  # Ajout au réseau
+  front:
+    build: ./FRONT
+    container_name: front
+    ports:
+      - "3000:3000"
+    networks:
+      - mynetwork  # Ajout au réseau
+    depends_on:
+      - api 
+
+  db:
+    image: mariadb:10.5
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: bd_projet_AIS
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    ports:
+      - "3306:3306"
+    networks:
+      - mynetwork  # Ajout au réseau
+    volumes:
+      - ./DB/BD.sql:/docker-entrypoint-initdb.d/BD.sql
+      - db_data:/var/lib/mysql
+

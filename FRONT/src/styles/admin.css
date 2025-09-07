@@ -1,0 +1,166 @@
+/* Classes pour la page AdminPage */
+
+/* Titre de la page admin */
+.admin-page-title {
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Conteneur de la table d'utilisateurs */
+.admin-table-container {
+  margin: 0 auto;
+}
+
+/* Style de la table d'utilisateurs */
+.admin-table {
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+/* En-têtes de colonne */
+.admin-table th {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Lignes de la table */
+.admin-table td {
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Bouton de suppression */
+.admin-table button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-table button:hover {
+  background-color: #ff1a1a;
+}
+
+/* Affichage des erreurs */
+.admin-error {
+  color: red;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media Queries pour la responsivité */
+
+/* Pour les petits écrans (tablettes et téléphones) */
+@media (max-width: 768px) {
+  .admin-page-title {
+    font-size: 1.5rem; /* Réduit la taille du titre */
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .admin-table-container {
+    padding: 10px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 8px;
+    font-size: 0.9rem; /* Réduit la taille de la police dans la table */
+  }
+
+  .admin-table button {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Pour les très petits écrans (mobiles) */
+@media (max-width: 480px) {
+  .admin-page-title {
+    font-size: 1.2rem; /* Encore plus petit pour les écrans mobiles */
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .admin-table th,
+  .admin-table td {
+    padding: 6px;
+    font-size: 0.8rem; /* Réduit encore la taille de la table */
+  }
+
+  .admin-table button {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  .admin-table-container {
+    padding: 5px;
+  }
+}
+
+/* Informations sur le rôle */
+.admin-role-badge {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+}
+
+/* Styles spécifiques aux rôles */
+.admin-role-badge.Capitaine {
+  background-color: #007bff;
+  color: white;
+}
+
+.admin-role-badge.Expert {
+  background-color: #28a745;
+  color: white;
+}
+.admin-role-badge.Armateur {
+  background-color: #320a9e;
+  color: white;
+}
+
+/*File Managment*/
+.file-management {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.Downloadbutton {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.Downloadbutton:hover {
+  background: #0056b3;
+}
