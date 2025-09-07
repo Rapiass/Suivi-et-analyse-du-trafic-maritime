@@ -43,21 +43,27 @@ AIS-Tracking-System/
 
 --- BACK/             
 --- --- Routes/
+
 --- --- Models/
+
 --- --- ETL/
+
 --- --- main.py           
 --- --- models.py         
 --- --- Database.py       
 
---- FRONT/             # Application React
+--- FRONT/            
 --- --- src/
---- --- --- components/   # Composants réutilisables
---- --- --- pages/        # Pages selon le rôle
+
+--- --- --- components/  
+
+--- --- --- pages/      
+
 --- --- --- apiroutes.js
 --- --- --- App.js
 --- --- package.json
 
---- README.md             # Documentation du projet
+--- README.md            
 
 
 ## Installation
