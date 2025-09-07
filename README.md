@@ -40,7 +40,7 @@ Le projet global consiste à réaliser une application qui met en avant les poss
 
 ## Structure du projet
 AIS-Tracking-System/
-|
+
 --- BACK/             
 --- --- Routes/
 --- --- Models/
@@ -48,7 +48,7 @@ AIS-Tracking-System/
 --- --- main.py           
 --- --- models.py         
 --- --- Database.py       
-|
+
 --- FRONT/             # Application React
 --- --- src/
 --- --- --- components/   # Composants réutilisables
@@ -56,7 +56,7 @@ AIS-Tracking-System/
 --- --- --- apiroutes.js
 --- --- --- App.js
 --- --- package.json
-|
+
 --- README.md             # Documentation du projet
 
 
